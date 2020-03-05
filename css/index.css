@@ -553,10 +553,17 @@ button:hover {
   background: navy;
   border: 2px solid dodgerblue;
 }
+.container .upper-section .staff1 button a {
+  text-decoration: none;
+  color: white;
+}
+.container .upper-section .staff1 button a:hover {
+  color: navy;
+}
 .container .upper-section .staff1 button:hover {
   width: 90px;
   color: navy;
-  background: white;
+  background: salmon;
   border: 2px solid dodgerblue;
 }
 .container .down-section {
@@ -602,9 +609,16 @@ button:hover {
   color: white;
   background: navy;
 }
+.container .down-section .staff2 button a {
+  text-decoration: none;
+  color: white;
+}
+.container .down-section .staff2 button a:hover {
+  color: navy;
+}
 .container .down-section .staff2 button:hover {
   font-family: 'Anton';
   color: navy;
-  background: white;
+  background: salmon;
   border: 2px solid dodgerblue;
 }
