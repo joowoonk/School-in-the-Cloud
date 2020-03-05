@@ -350,8 +350,8 @@ footer {
 }
 @media (max-width: 500px) {
   .welcoming-section .buttons button {
-    width: 90%:
-                margin: 3% auto;
+    width: 90%;
+    margin: 3% auto;
   }
 }
 .welcoming-section .buttons button:hover {
