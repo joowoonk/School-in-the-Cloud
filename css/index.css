@@ -164,7 +164,7 @@ table {
     display: none;
   }
 }
-.home .top-section {
+.top-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -173,17 +173,18 @@ table {
 }
 @media (max-width: 500px) {
   .home .top-section {
+    /* background-color:red; */
     flex-direction: column;
   }
 }
-.home nav {
+nav {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   background-color: skyblue;
   padding: 1% 0;
 }
-.home nav a {
+nav a {
   display: flex;
   justify-content: space-evenly;
   text-decoration: none;
@@ -192,7 +193,7 @@ table {
   width: 80%;
 }
 @media (max-width: 500px) {
-  .home nav a {
+nav a {
     flex-direction: column;
     font-size: 1rem;
     width: 100%;
