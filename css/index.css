@@ -1,0 +1,610 @@
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+.button-size {
+  width: 24%;
+  height: 50px;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  padding: 0%;
+  border-radius: 10px;
+  font-family: 'Anton';
+}
+.button-size2 {
+  width: 90px;
+  font-size: 1rem;
+  margin: 3% auto;
+  padding: 0%;
+  border-radius: 10px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.home {
+  /* Navbar links */
+}
+.home h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 50%;
+  color: navy;
+}
+@media (max-width: 500px) {
+  .home h1 {
+    display: none;
+  }
+}
+.home .top-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home .top-section {
+    flex-direction: column;
+  }
+}
+.home nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: skyblue;
+  padding: 1% 0;
+}
+.home nav a {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: grey;
+  font-size: 1.6rem;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .home nav a {
+    flex-direction: column;
+    font-size: 1rem;
+    width: 100%;
+    margin: -1%;
+  }
+}
+.home #navbar {
+  overflow: hidden;
+  background-color: skyblue;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 217, 255, 0.7);
+}
+.home #navbar a {
+  float: left;
+  display: block;
+  color: navy;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.home #navbar a:hover {
+  color: purple;
+}
+footer {
+  color: #22283B;
+  background: dodgerblue;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.image {
+  width: 100%;
+  height: 30%;
+}
+.centered {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-style: italic;
+  background: white;
+  text-align: right;
+  border-radius: 10px;
+  border: 2px solid navy;
+  padding: 3%;
+}
+@media (max-width: 900px) {
+  .centered {
+    display: none;
+  }
+}
+.right-below {
+  position: absolute;
+  top: 14%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: black;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid navy;
+  padding: 1%;
+}
+@media (max-width: 900px) {
+  .right-below {
+    display: none;
+  }
+}
+.centered1 {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-style: italic;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid navy;
+  padding: 3%;
+}
+@media (max-width: 900px) {
+  .centered1 {
+    display: none;
+  }
+}
+.right-below1 {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: black;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid navy;
+  padding: 1%;
+}
+@media (max-width: 900px) {
+  .right-below1 {
+    display: none;
+  }
+}
+.welcoming-section {
+  text-align: center;
+  width: 85%;
+  margin: 3.5% auto;
+  background: #EBFCFB;
+  padding-bottom: 2%;
+  border: 2px solid navy;
+  border-radius: 10px;
+}
+.welcoming-section h3 {
+  margin: 3% 0 1% 0;
+  font-size: 2.5rem;
+  padding-top: 3%;
+}
+.welcoming-section h2 {
+  margin: 0.5% 2% 1% 2%;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: dodgerblue;
+}
+.welcoming-section .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .welcoming-section .buttons {
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.welcoming-section .buttons button {
+  width: 40%;
+  height: 50px;
+  font-size: 1.4rem;
+  margin: 3%;
+  padding: 0%;
+  border-radius: 10px;
+  font-family: 'Anton';
+  color: white;
+  background: dodgerblue;
+}
+@media (max-width: 500px) {
+  .welcoming-section .buttons button {
+    width: 90%:
+                margin: 3% auto;
+  }
+}
+.welcoming-section .buttons button:hover {
+  border-radius: 10px;
+  font-family: 'Anton';
+  color: dodgerblue;
+  background: white;
+}
+.welcoming-section .paragraphs {
+  width: 80%;
+  margin: 3% auto;
+  background: skyblue;
+  padding: 2%;
+  border: 2px solid navy;
+  border-radius: 10px;
+}
+.welcoming-section .paragraphs p {
+  margin: 2% auto;
+  font-size: 1.2rem;
+  word-spacing: 1px;
+  line-height: 1.4;
+  text-align: left;
+}
+.my-mission {
+  text-align: center;
+  width: 80%;
+  margin: 3.5% auto;
+  background: #EBFCFB;
+  padding-bottom: 2%;
+  border: 2px solid navy;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+.my-mission h2 {
+  margin: 2% 0 2% 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+.my-mission .paragraphs {
+  width: 80%;
+  margin: 1% auto;
+  border-radius: 10px;
+}
+.my-mission .paragraphs p {
+  margin: 2% auto;
+  font-size: 1.5rem;
+  text-align: left;
+  word-spacing: 1px;
+  line-height: 1.4;
+}
+.as-seen-on {
+  width: 100%;
+  margin: 0 auto;
+  background: skyblue;
+  padding-bottom: 3%;
+}
+.as-seen-on h3 {
+  font-size: 3rem;
+  width: 50%;
+  padding-top: 3%;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.as-seen-on .logos {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 80%;
+}
+.as-seen-on .logos .logo {
+  width: 17%;
+  margin: 3%;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .as-seen-on .logos .logo {
+    width: 90%;
+    margin: 5% auto;
+  }
+}
+.as-seen-on .logos .logo1 {
+  height: 65px;
+}
+@media (max-width: 500px) {
+  .as-seen-on .logos .logo1 {
+    height: 100px;
+  }
+}
+.last-section h3 {
+  margin-top: 3%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.last-section .testimonials {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .last-section .testimonials {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.last-section .testimonials .testimonial {
+  width: 90%;
+  border: 2px solid dodgerblue;
+  margin: 3%;
+  padding: 1%;
+  border-radius: 10px;
+  background: skyblue;
+}
+.last-section .testimonials .testimonial .photo {
+  width: 80%;
+  margin-top: 4%;
+  border: 2px solid dodgerblue;
+  border-radius: 10px;
+}
+.last-section .testimonials .testimonial p {
+  margin: 4%;
+  text-align: left;
+}
+.last-section .testimonials .testimonial h4 {
+  margin: 4%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+button {
+  width: 24%;
+  height: 50px;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  padding: 0%;
+  border-radius: 10px;
+  font-family: 'Anton';
+  color: white;
+  background: dodgerblue;
+}
+button:hover {
+  color: dodgerblue;
+  background: white;
+}
+.about-top-image {
+  margin-top: -13%;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container h4 {
+  font-size: 3rem;
+  margin: 1.25% 0 -1% 0;
+}
+.container .upper-section {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.container .upper-section .staff1 {
+  width: 15%;
+  border: 2px solid dodgerblue;
+  margin: 2% 3% 2% 3%;
+  justify-content: space-between;
+  padding: 1%;
+  border-radius: 10px;
+  background: skyblue;
+}
+@media (max-width: 500px) {
+  .container .upper-section .staff1 {
+    width: 90%;
+    margin: 3% auto;
+  }
+}
+.container .upper-section .staff1 h3 {
+  font-size: 1.5rem;
+  margin: 4%;
+}
+.container .upper-section .staff1 .person-picture {
+  border-radius: 500px;
+  width: 65%;
+  border: 2px solid dodgerblue;
+}
+.container .upper-section .staff1 button {
+  width: 90px;
+  font-size: 1rem;
+  margin: 3% auto;
+  padding: 0%;
+  border-radius: 10px;
+  font-family: 'Anton';
+  color: white;
+  background: navy;
+  border: 2px solid dodgerblue;
+}
+.container .upper-section .staff1 button:hover {
+  width: 90px;
+  color: navy;
+  background: prink;
+  border: 2px solid dodgerblue;
+}
+.container .down-section {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+.container .down-section .staff2 {
+  width: 15%;
+  border: 2px solid dodgerblue;
+  margin: 2% 3% 2% 3%;
+  justify-content: space-evenly;
+  padding: 1%;
+  border-radius: 10px;
+  background: skyblue;
+}
+@media (max-width: 500px) {
+  .container .down-section .staff2 {
+    width: 90%;
+    margin: 3% auto;
+  }
+}
+.container .down-section .staff2 h3 {
+  font-size: 1.5rem;
+  margin: 2%;
+}
+.container .down-section .staff2 .person-picture {
+  border-radius: 500px;
+  width: 65%;
+  border: 2px solid dodgerblue;
+}
+.container .down-section .staff2 button {
+  width: 90px;
+  font-size: 1rem;
+  margin: 3% auto;
+  padding: 0%;
+  border-radius: 10px;
+  font-family: 'Anton';
+  color: white;
+  background: prink;
+}
+.container .down-section .staff2 button:hover {
+  font-family: 'Anton';
+  color: navy;
+  background: white;
+  border: 2px solid dodgerblue;
+}

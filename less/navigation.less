@@ -1,0 +1,76 @@
+// Navigation code here
+.home{
+
+    // background-color: rgba(255,255,255,0.7);
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        width: 50%;
+        color: navy;
+        // margin: 3% 1%;
+        @media(max-width:500px){
+            display: none;
+        }
+    }
+    .top-section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        @media(max-width: 500px){
+            flex-direction: column;
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: skyblue;
+        // background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)
+        padding: 1% 0;
+
+        a{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: grey;
+        font-size: 1.6rem;
+        width: 80%;
+        
+  
+        
+        @media (max-width: 500px){
+            // font-size:30rem;
+            flex-direction: column;
+            font-size: 1rem;
+            width: 100%;
+            margin: -1%;
+            }
+
+        }
+
+    }
+    #navbar {
+        overflow: hidden;
+        background-color: skyblue;
+        position: fixed;
+        top: 0;
+        background: rgba(0, 217, 255, 0.7);
+        
+      }
+      
+      /* Navbar links */
+      #navbar a {
+        float: left;
+        display: block;
+        color: navy;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+
+      #navbar a:hover{
+          color: purple;
+      }
+}
